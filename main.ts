@@ -9,7 +9,7 @@ basic.forever(function () {
         control.waitMicros(500000)
         pins.digitalWritePin(DigitalPin.P8, 0)
     } else {
-        OLED.writeStringNewLine("varning varning varning - någon har tagit din grej")
+        OLED.writeStringNewLine("varning varning alarm")
         pins.digitalWritePin(DigitalPin.P1, 0)
         pins.digitalWritePin(DigitalPin.P8, 1)
         control.waitMicros(50000)
